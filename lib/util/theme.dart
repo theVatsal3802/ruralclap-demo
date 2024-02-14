@@ -11,9 +11,15 @@ ThemeData theme() {
       error: Colors.red.shade800,
       onError: Colors.white,
       background: Colors.white,
-      onBackground: Colors.grey.shade800,
+      onBackground: Colors.grey.shade100,
       surface: Colors.white,
-      onSurface: Colors.grey.shade900,
+      onSurface: Colors.black87,
+    ),
+    useMaterial3: true,
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: const AppBarTheme(
+      elevation: 2,
+      color: Colors.white,
     ),
   );
 }
