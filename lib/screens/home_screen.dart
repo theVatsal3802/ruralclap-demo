@@ -5,6 +5,7 @@ import 'package:ruralclap/widgets/category_tile.dart';
 import 'package:ruralclap/widgets/trade.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const routeName = "/home";
   const HomeScreen({super.key});
 
   @override

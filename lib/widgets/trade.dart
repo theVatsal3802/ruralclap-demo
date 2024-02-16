@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_stars/flutter_rating_stars.dart';
 import 'package:ruralclap/models/trade_model.dart';
+import 'package:ruralclap/screens/cart_screen.dart';
 import 'package:ruralclap/util/constants.dart';
 
 class TradeTile extends StatelessWidget {
@@ -10,7 +11,12 @@ class TradeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).pushNamed(
+          CartScreen.routeName,
+          arguments: trade,
+        );
+      },
       child: Container(
         width: 150,
         padding: const EdgeInsets.all(10),
