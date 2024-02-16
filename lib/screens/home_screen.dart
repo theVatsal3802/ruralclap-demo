@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ruralclap/models/category_model.dart';
 import 'package:ruralclap/models/trade_model.dart';
 import 'package:ruralclap/widgets/category_tile.dart';
+import 'package:ruralclap/widgets/custom_drawer.dart';
 import 'package:ruralclap/widgets/trade.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Drawer(),
+      drawer: const CustomDrawer(),
       appBar: AppBar(
         title: const Text(
           "Welcome back",
